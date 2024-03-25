@@ -12,7 +12,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* Mantenha o resto do seu CSS inalterado */
 .linha {
     display: flex;
 }
