@@ -1,0 +1,104 @@
+
+body, html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/prova1-heroi-e-vilao/assets/img/bg-florest.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.personagem-heroi {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,32,113,1) 96%);
+    border: 2px solid #1d509f;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    overflow: auto;
+    position: relative;
+}
+
+.personagem-vilao {
+    background: linear-gradient(90deg, rgba(242,251,8,1) 25%, rgba(255,0,0,1) 74%);
+    border: 2px solid #1d509f;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    overflow: auto;
+    position: relative;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d509f;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1a355e;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.barra-vida {
+    height: 30px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sprite-heroi {
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: url(/prova1-heroi-e-vilao/assets/img/shrek-e-burro.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.sprite-heroi, h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.sprite-vilao {
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: url(/prova1-heroi-e-vilao/assets/img/Tai-Lung-viloes.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
